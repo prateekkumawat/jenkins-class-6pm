@@ -1,0 +1,23 @@
+pipeline {
+    agent any 
+    
+    stages {
+        stage("AppCode Checkout"){
+            step{
+                git branch:"master", url:"https://github.com/prateekkumawat/jenkins-class-6pm.git"
+            }
+        }
+
+        stage("run script"){
+            step{
+                sh script.sh 
+            }
+        }
+        
+        stage("post Actions"){
+            step{
+                echo "performs post actions"
+            }
+        }
+    }
+}
