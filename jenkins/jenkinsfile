@@ -3,19 +3,19 @@ pipeline {
     
     stages {
         stage("AppCode Checkout"){
-            step{
+            steps{
                 git branch:"main", url:"https://github.com/prateekkumawat/jenkins-class-6pm.git"
             }
         }
 
         stage("run script"){
-            step{
+            steps{
                 sh script.sh 
             }
         }
         
         stage("post Actions"){
-            step{
+            steps{
                 echo "performs post actions"
             }
         }
