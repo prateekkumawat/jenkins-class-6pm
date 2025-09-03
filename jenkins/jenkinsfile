@@ -16,7 +16,7 @@ pipeline {
         
         stage("post Actions"){
             steps{
-                echo "performs post actions"
+                sh echo "performs post actions"
             }
         }
     }
