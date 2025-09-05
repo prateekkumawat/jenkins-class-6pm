@@ -3,7 +3,7 @@ pipeline {
         label 'build'
     } 
     tools {
-        git 'Default'
+        maven 'maven'
     }
     
     stages {
