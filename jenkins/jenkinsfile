@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'build'
     } 
+    tools {
+        git 'gittool'
+    }
     
     stages {
         stage("AppCode Checkout"){
