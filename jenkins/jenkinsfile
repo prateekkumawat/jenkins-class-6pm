@@ -3,7 +3,7 @@ pipeline {
         label 'build'
     } 
     tools {
-        Git 'gittool'
+        Git 'git'
     }
     
     stages {
