@@ -13,9 +13,9 @@ pipeline {
             }
         }
 
-        stage("maven check"){
-            steps{
-                mvn --version
+        stage("maven check") {
+            steps {
+               sh 'mvn --version'
             }
         }
 
